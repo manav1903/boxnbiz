@@ -15,7 +15,8 @@
         android:src="@drawable/logo" />
 <TextView
     android:layout_width="wrap_content"
-    android:text="Welcome's you"
+    android:textAlignment="center"
+    android:text="Welcome's you \n\n\n PS: The ui isn't the best"
     android:textColor="@color/black"
     android:layout_below="@id/logo"
     android:layout_centerHorizontal="true"
