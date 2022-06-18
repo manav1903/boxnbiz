@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "913338340277",
+    "project_id": "boxnbiz-b2780",
+    "storage_bucket": "boxnbiz-b2780.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913338340277:android:abbb5d0c749f65ca237ffc",
+        "android_client_info": {
+          "package_name": "com.theappschef.boxnbiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913338340277-9s8tqfsuk7a6o52sf5kql0fchj3vlics.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ4DTA9hMmJ7LpbqrtZFuDYYYjmwsoGjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913338340277-9s8tqfsuk7a6o52sf5kql0fchj3vlics.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

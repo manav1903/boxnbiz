@@ -30,5 +30,14 @@ public class SharedPref {
         editor.putString("ss", choice);
         editor.apply();
     }
+    public String getEmail() {
+        return sharedPreferences.getString("ems", "");
+    }
+
+    public void setEmail(String choice) {
+        editor.putString("ems", choice);
+        editor.apply();
+    }
+
 
 }

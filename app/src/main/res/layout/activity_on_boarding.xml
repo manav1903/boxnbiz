@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.jama.carouselview.CarouselView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:enableSnapping="true"
+        app:scaleOnScroll="false"
+        app:setAutoPlay="true"
+        app:setAutoPlayDelay="3000"
+        android:id="@+id/carouselView"
+        app:carouselOffset="center"
+        app:indicatorAnimationType="drop"
+        app:indicatorRadius="5"
+        app:indicatorPadding="5"
+        app:indicatorSelectedColor="@color/selector_car"
+        app:indicatorUnselectedColor="@color/unselect_car"
+        app:size="10"
+        app:spacing="10"
+        app:resource="@layout/image_carousel_item" />
+
+    <TextView
+        android:id="@+id/started"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/texts"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="Get Started"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/texts"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#4a4a4a"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="By continuing you agree to our"
+            >
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Terms of Service"
+                android:textColor="#3560c1" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#4a4a4a"
+                android:gravity="center"
+                android:text=" and " />
+
+            <TextView
+                android:id="@+id/policy"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#3560c1"
+                android:gravity="center"
+                android:text="Privacy Policy" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -205,35 +205,26 @@ public class MainActivity extends AppCompatActivity {
                                 User user = new User();
                                 user.setImageUrl(jsonObject.getString("avatar_url"));
                                 user.setTitle(jsonObject.getString("login"));
-
                                 user.setDesc(jsonObject.getString("id"));
                                 result.add(user);
-
                                 jsonArrayGlobal.put(jsonObject);
-
                                 displayedList.add(user);
                                 Log.d("as", result.toString());
                             }
-
                             sharedPref.setOff(jsonArrayGlobal.toString());
-//                            List<User> results = response.body();
                             MainAdapter.addAll(result);
-
                             if (currentPage != TOTAL_PAGES) MainAdapter.addLoadingFooter();
                             else isLastPage = true;
-
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
                     });
-
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         });
     }
-
     void filter(String text) {
         List<User> temp = new ArrayList<>();
         for (User d : displayedList) {
